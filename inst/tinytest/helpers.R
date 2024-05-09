@@ -1,4 +1,4 @@
-options("tinysnapshot_device" = "svglite")
+options("tinysnapshot_device" = "png")
 options("tinysnapshot_tol" = 200)
 
 
@@ -14,3 +14,4 @@ requiet <- function(package) {
 requiet("tinytable")
 requiet("tinytest")
 requiet("tinysnapshot")
+

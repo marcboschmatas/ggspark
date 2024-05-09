@@ -12,8 +12,8 @@ p <- ggplot(airquality, aes(Day, Wind, group = Month)) +
                    show.legend = FALSE) +
   scale_y_continuous(limits = c(0, 25)) + 
   facet_grid(Month~.) +
-  ggtitle("Daily wind intensity by month in NYC") +
-  theme_classic()
+  ggtitle("Daily wind intensity by month in NYC") + 
+  theme_minimal()
 
 
 expect_snapshot_plot(p, label = "ggplot2_example")
