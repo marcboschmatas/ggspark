@@ -39,3 +39,4 @@ vignettes/*.pdf
 .Rdata
 .DS_Store
 .quarto
+revdep/

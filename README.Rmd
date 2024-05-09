@@ -34,6 +34,8 @@ devtools::install_github("marcboschmatas/ggspark")
 
 ## Example
 
+The `stat_sparklabels` function needs a colour scale with three values. The first one will be using for the start and end points of the line, the second one for the max, and the third one for the min.
+
 
 ```{r example}
 library(ggplot2)
@@ -52,7 +54,7 @@ ggplot(airquality, aes(Day, Wind, group = Month)) +
   theme(panel.grid = element_blank(),
         axis.ticks = element_line())
 ```
-It has an optional `label_fun` parametre that allows to modify the label aesthetics (such as rounding, adding percentage or currency suffixes and prefixes...).
+It has an optional `label_fun` parameter that allows to modify the label aesthetics (such as rounding, adding percentage or currency suffixes and prefixes...).
 
 ```{r example2}
 library(ggplot2)

@@ -39,7 +39,7 @@ from a \code{formula} (e.g. \code{~ head(.x, 10)}).}
 
 \item{geom}{either "point", "text", "label", "text_repel", or "label_repel"}
 
-\item{label_fun}{function to adapt labels (p. ex. round or add suffixs)}
+\item{label_fun}{function to adapt labels (p. ex. round or add suffixes)}
 
 \item{position}{Position adjustment, either as a string naming the adjustment
 (e.g. \code{"jitter"} to use \code{position_jitter}), or the result of a call to a
