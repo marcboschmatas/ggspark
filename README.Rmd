@@ -18,14 +18,14 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ggspark is to ...
+The goal of ggspark is to help create ggplot2 functions in order to 
 
 ## Installation
 
 You can install the development version of ggspark like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("marcboschmatas/ggspark")
 ```
 
 ## Example
