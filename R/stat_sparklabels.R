@@ -66,7 +66,7 @@ SparkLabels <- ggplot2::ggproto("SparkLabels", ggplot2::Stat, # nolint: object_n
 #' }
 #'
 #' @inheritParams ggplot2::stat_identity
-#' @param label_fun function to adapt labels (p. ex. round or add suffixs)
+#' @param label_fun function to adapt labels (p. ex. round or add suffixes)
 #' @param geom either "point", "text", "label", "text_repel", or "label_repel"
 #' @export
 #'
