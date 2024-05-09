@@ -11,3 +11,5 @@ Suggests: tinytest, tinysnapshot, rsvg, svglite
 Imports: ggplot2
 Encoding: UTF-8
 RoxygenNote: 7.2.3
+URL: https://github.com/marcboschmatas/ggspark
+BugReports: https://github.com/marcboschmatas/ggspark/issues

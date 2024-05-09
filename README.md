@@ -1,28 +1,27 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
 
 # ggspark
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ggspark is to help create ggplot2 functions that help with creating sparkline plots in the style of Edward Tufte, such as this one
+The goal of ggspark is to help create ggplot2 functions that help with
+creating sparkline plots in the style of Edward Tufte, such as this one
 
-![Original sparklines, source Edward Tufte.](https://s3.amazonaws.com/edwardtufte.com/sparklines_hemodynamics_3.jpg)
+<figure>
+<img
+src="https://s3.amazonaws.com/edwardtufte.com/sparklines_hemodynamics_3.jpg"
+alt="Original sparklines, source Edward Tufte." />
+<figcaption aria-hidden="true">Original sparklines, source Edward
+Tufte.</figcaption>
+</figure>
 
-Thus, the package has two main functions: `stat_interquartilerange` that draws a `geom_ribbon` between the 1st and 3rd quartile of the variable in the y axis, and `stat_sparklabels` that draws points or text labels in the beginning, min, max, and end points of the variable in the y axis.
+Thus, the package has two main functions: `stat_interquartilerange` that
+draws a `geom_ribbon` between the 1st and 3rd quartile of the variable
+in the y axis, and `stat_sparklabels` that draws points or text labels
+in the beginning, min, max, and end points of the variable in the y
+axis.
 
 ## Installation
 
@@ -34,8 +33,7 @@ devtools::install_github("marcboschmatas/ggspark")
 
 ## Example
 
-
-```{r example}
+``` r
 library(ggplot2)
 library(ggspark)
 ggplot(airquality, aes(Day, Wind, group = Month)) + 
@@ -52,9 +50,13 @@ ggplot(airquality, aes(Day, Wind, group = Month)) +
   theme(panel.grid = element_blank(),
         axis.ticks = element_line())
 ```
-It has an optional `label_fun` parametre that allows to modify the label aesthetics (such as rounding, adding percentage or currency suffixes and prefixes...).
 
-```{r example2}
+<img src="man/figures/README-example-1.png" width="100%" /> It has an
+optional `label_fun` parametre that allows to modify the label
+aesthetics (such as rounding, adding percentage or currency suffixes and
+prefixes…).
+
+``` r
 library(ggplot2)
 library(ggspark)
 ggplot(airquality, aes(Day, Wind, group = Month)) + 
@@ -72,11 +74,13 @@ ggplot(airquality, aes(Day, Wind, group = Month)) +
         axis.ticks = element_line())
 ```
 
+<img src="man/figures/README-example2-1.png" width="100%" />
 
 It is also possible to use points instead of labels.
 
-```{r example3}
+``` r
 library(ggrepel)
+#> Warning: package 'ggrepel' was built under R version 4.3.3
 ggplot(airquality, aes(Day, Wind, group = Month)) + 
   stat_interquartilerange(geom = "ribbon",
                           show.legend = FALSE) +
@@ -92,9 +96,11 @@ ggplot(airquality, aes(Day, Wind, group = Month)) +
         axis.ticks = element_line())
 ```
 
+<img src="man/figures/README-example3-1.png" width="100%" />
+
 With ggrepel, it is possible to combine both text and dots.
 
-```{r example4}
+``` r
 library(ggrepel)
 ggplot(airquality, aes(Day, Wind, group = Month)) + 
   stat_interquartilerange(geom = "ribbon",
@@ -112,3 +118,5 @@ ggplot(airquality, aes(Day, Wind, group = Month)) +
   theme(panel.grid = element_blank(),
         axis.ticks = element_line())
 ```
+
+<img src="man/figures/README-example4-1.png" width="100%" />

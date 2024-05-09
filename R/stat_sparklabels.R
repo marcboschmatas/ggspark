@@ -7,7 +7,8 @@
 SparkLabels <- ggplot2::ggproto("SparkLabels", ggplot2::Stat, # nolint: object_name_linter
                                 required_aes = c("x", "y"),
                                 compute_group = function(data, scales,
-                                                         label_fun) {
+                                                         label_fun,
+                                                         colour) {
                                   transform_label <- function(x,
                                                               f = label_fun) {
                                     if (is.null(f) || !is.function(f)) {
@@ -53,7 +54,7 @@ SparkLabels <- ggplot2::ggproto("SparkLabels", ggplot2::Stat, # nolint: object_n
                                 }
 )
 
-#' Interquartile range
+#' Sparkline labels or points
 #'
 #' stat for points or labels at the start, end, max, and min values of a line.
 #' will automatically compute them from x and y aesthetics.
@@ -66,7 +67,7 @@ SparkLabels <- ggplot2::ggproto("SparkLabels", ggplot2::Stat, # nolint: object_n
 #'
 #' @inheritParams ggplot2::stat_identity
 #' @param label_fun function to adapt labels (p. ex. round or add suffixs)
-#' @param geom either "point", "text", or "label"
+#' @param geom either "point", "text", "label", "text_repel", or "label_repel"
 #' @export
 #'
 #' @details This should be used in combination with `geom_line()` in order to

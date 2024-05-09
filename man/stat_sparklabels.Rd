@@ -4,7 +4,7 @@
 \name{SparkLabels}
 \alias{SparkLabels}
 \alias{stat_sparklabels}
-\title{Interquartile range}
+\title{Sparkline labels or points}
 \usage{
 stat_sparklabels(
   mapping = NULL,
@@ -37,7 +37,7 @@ the plot data. The return value must be a \code{data.frame}, and
 will be used as the layer data. A \code{function} can be created
 from a \code{formula} (e.g. \code{~ head(.x, 10)}).}
 
-\item{geom}{either "point", "text", or "label"}
+\item{geom}{either "point", "text", "label", "text_repel", or "label_repel"}
 
 \item{label_fun}{function to adapt labels (p. ex. round or add suffixs)}
 
