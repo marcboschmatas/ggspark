@@ -1,4 +1,4 @@
-options("tinysnapshot_device" = "png")
+options("tinysnapshot_device" = "svglite")
 options("tinysnapshot_tol" = 200)
 
 
