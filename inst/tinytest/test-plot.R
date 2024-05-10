@@ -1,3 +1,7 @@
+options(tinysnapshot_os = "Windows") # see Sys.info()["sysname"]
+options(tinysnapshot_device = "svglite")
+options(tinysnapshot_device_args = list(user_fonts = fontquiver::font_families("Liberation")))
+
 
 using("tinysnapshot")
 library(ggplot2)
@@ -15,7 +19,6 @@ p <- ggplot(airquality, aes(Day, Wind, group = Month)) +
   theme_minimal()
 
 
-expect_equal(p$layers[[1]]$aes_params$fill, "gray90")
+expect_snapshot_plot(p, label = "ggplot2_example")
 
 
-expect_equal(p$layers[[3]]$stat$required_aes, c("x", "y"))

@@ -7,7 +7,7 @@ Author: Marc Bosch i Matas
 Maintainer: Marc Bosch i Matas <mboschmatas@gmail.com>
 Description: Functions to help with creating sparklines in the style of Edward Tufte. It computes ribbon geoms with the interquartile ranges and points and/or labels at the beginning, end, max, and min points.
 License: GPL (>= 2)
-Suggests: tinytest, tinysnapshot, rsvg, svglite, ggrepel
+Suggests: tinytest, tinysnapshot, rsvg, svglite, ggrepel, fontquiver
 Imports: ggplot2
 Encoding: UTF-8
 Language: en-GB
