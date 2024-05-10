@@ -1,7 +1,7 @@
 Package: ggspark
 Type: Package
 Title: ggplot2 Functions to Create Tufte Style Sparklines
-Version: 0.0.1
+Version: 0.0.2
 Date: 2024-05-09
 Author: Marc Bosch i Matas
 Maintainer: Marc Bosch i Matas <mboschmatas@gmail.com>
