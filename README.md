@@ -17,11 +17,11 @@ alt="Original sparklines, source Edward Tufte." />
 Tufte.</figcaption>
 </figure>
 
-Thus, the package has two main functions: `stat_interquartilerange` that
-draws a `geom_ribbon` between the 1st and 3rd quartile of the variable
-in the y axis, and `stat_sparklabels` that draws points or text labels
-in the beginning, min, max, and end points of the variable in the y
-axis.
+Thus, the package has two main functions: `stat_interquartilerange()`
+that draws a `geom_ribbon()` between the 1st and 3rd quartile of the
+variable in the y axis, and `stat_sparklabels()` that draws points or
+text labels in the beginning, min, max, and end points of the variable
+in the y axis.
 
 ## Installation
 
@@ -33,9 +33,9 @@ devtools::install_github("marcboschmatas/ggspark")
 
 ## Example
 
-The `stat_sparklabels` function needs a colour scale with three values.
-The first one will be using for the start and end points of the line,
-the second one for the max, and the third one for the min.
+The `stat_sparklabels()` function needs a colour scale with three
+values. The first one will be using for the start and end points of the
+line, the second one for the max, and the third one for the min.
 
 ``` r
 library(ggplot2)
