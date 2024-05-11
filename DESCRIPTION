@@ -1,11 +1,11 @@
 Package: ggspark
 Type: Package
-Title: ggplot2 Functions to Create Tufte Style Sparklines
+Title: 'ggplot2' Functions to Create Tufte Style Sparklines
 Version: 0.0.2
 Date: 2024-05-09
-Author: Marc Bosch i Matas
-Maintainer: Marc Bosch i Matas <mboschmatas@gmail.com>
-Description: Functions to help with creating sparklines in the style of Edward Tufte. It computes ribbon geoms with the interquartile ranges and points and/or labels at the beginning, end, max, and min points.
+Authors@R: c(person("Marc", "Bosch Matas", role = c("aut", "cre","cph"),
+email = "mboschmatas@gmail.com")
+Description: Functions to help with creating sparklines in the style of Edward Tufte <https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR&topic_id=1> in 'ggplot2'. It computes ribbon geoms with the interquartile ranges and points and/or labels at the beginning, end, max, and min points.
 License: GPL (>= 2)
 Suggests: tinytest, tinysnapshot, rsvg, svglite, ggrepel, fontquiver
 Imports: ggplot2
