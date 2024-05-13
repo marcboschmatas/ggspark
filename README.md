@@ -24,6 +24,10 @@ text labels in the beginning, min, max, and end points of the variable
 in the y axis.
 
 ## Installation
+Package can be installed from CRAN like so: 
+``` r
+install.packages("ggspark")
+```
 
 You can install the development version of ggspark like so:
 
